@@ -7,7 +7,7 @@ public:
             arr.push_back(nums[i+1]);
             arr.push_back(nums[i]);
         }
-        
+        // return result
         return arr;
         
     }
