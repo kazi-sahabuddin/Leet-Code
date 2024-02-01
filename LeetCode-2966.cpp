@@ -6,14 +6,8 @@ public:
         int n= nums.size();
 
         vector<vector<int>> ans(n/3,vector<int>(3));
-
-
-        int f=1;
         int cnt=0;
         int j=0;
-        
-
-
         for(int i=0;i<n;i++){
             ans[j][cnt++]=nums[i];
             if(cnt==3){                
@@ -27,10 +21,7 @@ public:
             if( ans[i][2]-ans[i][0] > k  ) {
                 return {};
             }
-        }
-      
+        }      
         return ans;
-        
-        
     }
 };
